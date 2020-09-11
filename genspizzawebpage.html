@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My second web page</title>
+    </head>
+    <body>
+<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">    
+        <style>
+
+           :root {
+              --page-back: black;
+              --cen-alignment: center;
+            }  
+
+            h1 {
+              color: red;
+              text-align: var(--cen-alignment, center);
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-transform: uppercase;             
+            }
+
+            h2:hover {
+              transform: scale(2.1);
+            }
+
+
+            p {
+              font-size: 30px;              
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-align: var(--cen-alignment, center);
+            } 
+
+            .green-text {
+              color: green;
+            }
+
+            .white-text {
+              color: white;
+            } 
+
+            h2{
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-align: var(--cen-alignment, center);
+            }
+
+            #pizza-shop-subtitle {
+              position: relative;
+              top: 0px;
+            }
+
+            h3 {
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-align: var(--cen-alignment, center);
+            }
+
+            h4 {
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-align: var(--cen-alignment, center);
+            }
+
+            h5 {
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-align: var(--cen-alignment, center);
+              box-shadow: 0 10px 20px rgba(204, 52, 52, 0.19), 0 6px 6px rgba(204, 52, 52, 0.23);
+            }
+
+            a {
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-align: var(--cen-alignment, center);
+            }  
+
+            li {
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-align: var(--cen-alignment, center);
+              background-color: rgba(240, 216, 6, 0.1);
+            }
+
+            label {
+              font-family: "Oxanium", monospace, GENERIC_NAME;
+              text-align: var(--cen-alignment, center);
+            }
+
+            .smaller-image {
+              width: 250px;
+            }
+
+            .thick-darkred-border {
+                border-color: rgb(80, 3, 3);
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 30%;
+            }
+
+            .darkgreen-background {
+                background-color: rgb(8, 51, 21);
+                padding: 20px;
+                margin: 40px;
+            } 
+
+            [type='radio'] {
+                margin: 25px 0px 10px 0px;
+                text-align: var(--cen-alignment, center);
+            }
+
+            body {
+                background: var(--page-back, black);
+                color: white;
+            }
+
+            #pizza-topping-form-vote {
+                background-color: #F00;
+                padding: 10px; 
+                margin: 40px 20px 20px 40px;
+                text-align: var(--cen-alignment, center);
+                box-shadow: 0 10px 20px rgba(240, 7, 7, 0.19);
+                animation-name: rainbow;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+          @keyframes rainbow {
+                0% {
+                  background-color: red;
+                  }
+                  50% {
+                    background-color: green;
+                  }  
+                  100% {
+                    background-color: white;
+                  } 
+                  }                  
+            
+            .ball {
+                width: 40px;
+                height: 40px;
+                margin: 50 auto;
+                position: fixed;
+                background: linear-gradient(
+                35deg,
+                #ccffff,
+                #ffcccc
+              );
+            border-radius: 50%;
+            }
+
+            .links {
+                  opacity: 0.7;
+            }           
+          </style>
+         
+         <body>
+
+         <header>
+
+        <h1 id="pizza-shop-title">Gen's Pizza!</h1>
+        <h2 id="pizza-shop-subtitle" class="green-text">Greatest Pizzeria of All Time</h2>
+
+         </header>
+        <img id="logo" class="smaller-image thick-darkred-border" src="genspizzalogo.jpg" alt="pepperoni-pizza-with-a-smile this is the company logo" >
+        <p id="why-eat-question" class="white-text darkgreen-background">Why <strong>eat</strong> anywhere else?</p>
+        <h2 id="pizza-pep-title" class="green-text">Pepperoni</h2>
+        <img id="pepp-pizza" class="smaller-image img-background"  src="genspepperonipizza.jpg" alt="pepperoni-pizza-with-cheese">
+        <h2 id="pizza-pep-sausage-title" class="green-text">Pepperoni and Sausauge</h2>
+        <img id="pepp-sausage-pizza" class="smaller-image" src="pepandsausagegenspizza.jpg" alt="pepperoni-pizza-with-cheese-sausage">
+        <h2 id="pizza-pep-sausage-greenpep-title" class="green-text">Pepperoni and Sausauge Plus Green Peppers</h2>
+        <img id="pepp-sausage-greenpepper-pi" class="smaller-image" src="greenpeppergenspizza.jpg "alt="pepperoni-pizza-with-cheese-sausage-peppers">
+        <h2 id="everything-bacon-pizza-title" class="green-text">Pepperoni and Sausauge Plus Green Peppers and Bacon</h2>
+        <img id="everthing-bacon-pizza" class="smaller-image" src="deluxegenspizza.jpg" alt="pepperoni-pizza-with-cheese-sausage-peppers-bacon">
+        <h3 id="other-food-yellow">Other Food</h3>
+
+        <nav>
+
+        <ol>
+            <li>Wings</li>
+            <li>Garlic Bread</li>
+            <li>Dessert</li>
+        </ol>
+      </nav>
+
+    <footer>
+    <h4>New Pizza Toppings</h4>
+    <h5 id="pizza-topping-form-vote" class="background-color"><strong>Vote</strong> Now! </h5>
+    <fieldset>
+      <legend>Choose one of these three items:</legend>
+             <label for="steak">Steak</label>
+        <input id="steak" value="steak" type="radio" checked name="steak-chorizo-buffalochicken"> 
+            <label for="chorizo">Chorizo</label>
+        <input id="chorizo" value="chorizo" type="radio" name="steak-chorizo-buffalochicken"> Chorizo</
+            <label for="buffalo chicken">Buffalo Chicken</label>
+        <input id="buffalo chicken" value="buffalo chicken" type="radio" name="steak-chorizo-buffalochicken"> 
+    <fieldset>
+        <h5 id="farm-links"> Links to the <strong> Local Farms </strong> we Support</h5>
+	<a href="#" class="links">Sunny's</a>
+	<a href="#" class="links">Runnng Cow Farm</a>
+    </footer>
+</html>
+    
+    
